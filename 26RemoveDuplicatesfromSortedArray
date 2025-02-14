@@ -1,0 +1,21 @@
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        LinkedList<Integer> linky = new LinkedList<>();
+
+        for(int i =0; i < nums.length; i++){
+            if(linky.contains(nums[i])){
+                continue;
+            }
+
+            linky.add(nums[i]);
+        }
+
+        for(int i =0; i < nums.length; i++){
+            if(i < linky.size()) {
+                nums[i] = linky.get(i);
+            }
+        }
+        
+        return linky.size();
+    }
+}
