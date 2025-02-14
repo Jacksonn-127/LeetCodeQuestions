@@ -1,2 +1,2 @@
 # LeetCodeQuestions
-Solutions for all my LeetCode questions
+Solutions for most my LeetCode questions, some were not saved by LeetCode
